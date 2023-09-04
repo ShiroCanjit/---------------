@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Счетчик калорий</title>
+  </head>
+  <html>
+    <body>
+      <form>
+        <p class="main_header">Счетчик калорий</p>
+        <div class="program">
+          <div class="main_view">
+            <p class="header_small">Пол</p>
+            <div class="sex_choose">
+              <button class="sex active_sex" id="man">Мужчина</button>
+              <button class="sex" id="woman">Женщина</button>
+            </div>
+            <div class="parametrs">
+              <div class="user_age">
+                <p class="header_small">Возраст</p>
+                <input type="text" class="input_box" />
+              </div>
+              <div class="user_height">
+                <p class="header_small">Рост</p>
+                <input type="text" class="input_box" />
+              </div>
+              <div class="user_mass">
+                <p class="header_small">Вес</p>
+                <input type="text" class="input_box" />
+              </div>
+            </div>
+            <p class="header_small">Физическая активность</p>
+            <div class="radio_activity">
+              <input type="radio" name="action" id="radio_1" checked />
+              <label for="radio_1" class="radio_results">Минимальная</label>
+              <p class="radio_options">
+                Сидячая работа и нет физических нагрузок
+              </p>
+            </div>
+            <div class="radio_activity">
+              <input type="radio" name="action" id="radio_2" />
+              <label for="radio_2" class="radio_results">Низкая</label>
+              <p class="radio_options">
+                Редкие, нерегулярные нагрузки, активность в быту
+              </p>
+            </div>
+            <div class="radio_activity">
+              <input type="radio" name="action" id="radio_3" />
+              <label for="radio_3" class="radio_results">Средняя</label>
+              <p class="radio_options">Тренировки 3-5 раз в неделю</p>
+            </div>
+            <div class="radio_activity">
+              <input type="radio" name="action" id="radio_4" />
+              <label for="radio_4" class="radio_results">Высокая</label>
+              <p class="radio_options">Тренировки 6-7 раз в неделю</p>
+            </div>
+            <div class="radio_activity">
+              <input type="radio" name="action" id="radio_5" />
+              <label for="radio_5" class="radio_results">Очень высокая</label>
+              <p class="radio_options">
+                Больше 6 тренировок в неделю и физическая работа
+              </p>
+            </div>
+            <div class="count_btns">
+              <button class="c_btn">Рассчитать</button>
+              <button class="clear_button">Отчистить поле и расчет</button>
+            </div>
+          </div>
+        </div>
+        <div class="result_view">
+          <p class="result_header">Ваша норма калорий</p>
+          <div class="results">
+            <div class="equal">
+              <p class="radio_results" id="equal_w"></p>
+              <p class="radio_options result_label">Поддержание веса</p>
+            </div>
+            <div class="lower">
+              <p class="radio_results" id="lower_w"></p>
+              <p class="radio_options result_label">Снижение веса</p>
+            </div>
+            <div class="rise">
+              <p class="radio_results" id="rise_w"></p>
+              <p class="radio_options result_label">Набор веса</p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </body>
+    <script src="script.js"></script>
+  </html>
+</html>

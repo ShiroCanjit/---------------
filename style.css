@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 150%;
+}
+
+body {
+  background-color: rgb(76, 140, 236);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.program {
+  display: flex;
+  align-items: center;
+}
+.main_header {
+  color: #fff;
+  font-weight: 900;
+  font-size: 250%;
+}
+
+.header_small {
+  font-weight: 900;
+  font-size: 150%;
+  margin-top: 15px;
+}
+.radio_activity {
+  margin-top: 10px;
+}
+.radio_results {
+  font-weight: 900;
+  font-size: 100%;
+}
+.radio_options {
+  color: rgb(109, 108, 108);
+}
+
+.main_view {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 9px;
+  width: 650px;
+}
+.sex_choose {
+  display: flex;
+  flex-direction: row;
+}
+.sex {
+  background-color: #fff;
+  border-radius: 9px;
+  border-color: #ee7d05;
+  color: #000000;
+  padding: 1rem;
+  text-align: center;
+  font-size: 100%;
+  margin-top: 15px;
+  width: 100%;
+}
+.sex:hover {
+  background-color: #ffdeba;
+}
+.sex:active {
+  background-color: #fff;
+}
+.active_sex {
+  background-color: #ee7d05;
+}
+#woman {
+  margin-left: 15px;
+}
+.parametrs {
+  display: flex;
+  flex-flow: row;
+  height: 100%;
+}
+.parametrs div {
+  margin-right: auto;
+}
+.input_box {
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 100%;
+  width: 130px;
+}
+.count_btns {
+  display: flex;
+  flex-direction: row;
+}
+.c_btn {
+  display: flex;
+  background-color: #8aff05;
+  border-color: #000000;
+  border-radius: 9px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  width: 500%;
+}
+.count_btns button:hover {
+  background-color: #c1fd7c;
+}
+.clear_button {
+  display: flex;
+  border-color: #000000;
+  border-radius: 9px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 80%;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 500%;
+}
+
+.result_view {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 9px;
+  width: 650px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.result_header {
+  color: #ee7d05;
+  font-weight: 900;
+  font-size: 200%;
+}
+.results {
+  display: flex;
+  flex-flow: row;
+  height: 100%;
+}
+.alert_input {
+  border: 5px solid red;
+}
+.result_label {
+  margin-right: 100px;
+  width: 100px;
+}
+.hidden {
+  display: none;
+}
